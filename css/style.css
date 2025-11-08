@@ -1,0 +1,36 @@
+/* .title {
+    color: blueviolet;
+    font-size: 48px;
+    font-weight: bold;
+    background-color: yellow;
+    display:inline; 
+} 
+*/
+
+#master {
+    background: black;
+    color: white;
+    font-size: 3rem;
+    padding-left: 20px;
+    margin-left: 20px;
+
+}
+
+#phd {
+    background: red;
+    color: white;
+    font-size: 3rem;
+    padding:100px;
+    margin: 50px 20px;
+    border: 10px solid black;
+}
+
+.subject {
+    background-color: red;
+    color: white;
+    font-size: 3rem;
+}
+
+body {
+    background: linear-gradient(to left, blueviolet, aqua, yellow);
+}

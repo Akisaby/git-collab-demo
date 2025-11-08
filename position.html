@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <style>
+        #blue {
+            background: linear-gradient(to right, aqua, blueviolet);
+            float: left
+        }
+
+        #yellow {
+            background: linear-gradient(to right, yellow, yellowgreen);
+            float: right;
+        }
+
+        #green {
+            background: linear-gradient(to right, green, greenyellow);
+            clear: both;
+        }
+
+        .container {
+            height: 200px;
+            font-size: 32px;
+        }
+
+        .flag {
+            width: 700px;
+        }
+
+        #color1 {
+            height: 200px;
+            background-color: blue;
+        }
+
+        #color2 {
+            height: 120px;
+            background-color: #F2CB01;
+        }
+
+        #color3 {
+            height: 120px;
+            background-color: #1F5D3B;
+        }
+
+        #circle {
+            width: 100px;
+            height: 100px;
+            background-color: #F2CB01;
+            border-radius: 50%;
+            border: 5px solid #009ED9;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+
+        #circle-container {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: #F2CB01;
+            position: relative;
+            left: 550px;
+            top: 130px;
+        }
+
+        #image{
+            margin-top: 50px;
+            position: fixed;
+            top: 10px;
+            right: 20px;
+        }
+        #profile{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="blue">Blue content</div>
+    <div class="container" id="yellow">Yellow content</div>
+    <div class="container" id="green">Green content</div>
+
+    <div style="margin: 10px;">
+        <div id="circle-container">
+            <div id="circle"></div>
+        </div>
+
+        <div class="flag" id="color1"></div>
+        <div class="flag" id="color2"></div>
+        <div class="flag" id="color3"></div>
+        <div id="image">
+            <img id="profile" src="images/computer.jpg" alt="This is our original image" width="150px" height="150px">
+        </div>
+    </div>
+
+    <script>
+        //    var color1 = document.getElementById("color1");
+        //    color1.style.backgroundColor = "blue"; 
+        document.getElementById("color1").style.backgroundColor = "#009ED9";
+        document.getElementsByClassName("flag")[0].style.width = "720px";
+        document.getElementsByClassName("flag")[1].style.width = "720px";
+        document.getElementsByClassName("flag")[2].style.width = "720px";
+        // document.getElementById("profile").setAttribute("src", "https://picsum.photos/200/300");
+        // document.getElementById("profile").setAttribute("src", "https://i.pravatar.cc/150");
+        document.getElementById("profile").setAttribute("src", "https://avatar.iran.liara.run/public/31");
+    
+        var currentImage = document.getElementById("profile").getAttribute("src");
+        // alert(currentImage);
+        // document.getElementById("profile").removeAttribute("src");
+    </script>
+</body>
+
+</html>
